@@ -14,6 +14,11 @@ class Index extends CI_Controller {
 		$this->load->view('user/home');
 	}
 
+	public function fakta(){
+		$this->hapus();
+		$this->load->view('user/fakta');
+	}
+
 	public function hapus(){
 		$this->session->unset_userdata('id_soal');
 		$this->session->unset_userdata('id_jawaban');

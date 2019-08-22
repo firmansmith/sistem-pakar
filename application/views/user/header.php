@@ -77,6 +77,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="<?php echo base_url('Index/index') ?>">Beranda</a></li>
+          <li><a href="<?php echo base_url('Index/fakta') ?>">Fakta</a></li> 
           <li><a href="<?php echo base_url('Index/tentang') ?>">Tentang</a></li>
           <li><a href="<?php echo base_url('Index/bantuan') ?>">Bantuan</a></li>
           <li><a href="<?php echo base_url('Index/tes')?>" >Mulai Tes</a></li>
