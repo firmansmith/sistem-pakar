@@ -1,7 +1,7 @@
 <?php $this->load->view('user/header'); ?>
 <style type="text/css">
 	.costume{
-		border: thin solid #229a0c;
+		border: thin solid #50d8af;
 	    margin-top: 60px;
 	    margin-bottom: 30px;
 	    padding: 20px;

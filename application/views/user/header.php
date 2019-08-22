@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Psikologi MBTI</title>
+  <title>Reveal Bootstrap Template</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -46,18 +46,21 @@
   <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block">
+  <!-- <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o">muhamad.firman34@gmail.com</i>
-        <i class="fa fa-phone">+6285921665947</i> 
-        <i class="fa fa-line">1316603</i>
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="fa fa-phone"></i> +1 5589 55488 55
       </div>
       <div class="social-links float-right">
-        <a href="https://www.facebook.com/muhamad.firman.9404" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
-  </section> 
+  </section> -->
 
   <!--==========================
     Header
@@ -66,7 +69,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">SMI<span>TH</span></a></h1>
+        <h1><a href="#body" class="scrollto">Bamba<span>ng</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -74,7 +77,6 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="<?php echo base_url('Index/index') ?>">Beranda</a></li>
-          <li><a href="<?php echo base_url('Index/fakta') ?>">Fakta</a></li> 
           <li><a href="<?php echo base_url('Index/tentang') ?>">Tentang</a></li>
           <li><a href="<?php echo base_url('Index/bantuan') ?>">Bantuan</a></li>
           <li><a href="<?php echo base_url('Index/tes')?>" >Mulai Tes</a></li>
@@ -87,7 +89,7 @@
               <li><a href="<?php echo base_url('Index/profil')?>">Profil</a></li>
               <li><a href="<?php echo base_url('Index/riwayat')?>">Riwayat</a></li>
               <li><a href="<?php echo base_url('Index/pengaturan') ?>">Pengaturan</a></li>
-              <li><a href="<?php echo('Login/keluar') ?>">Keluar</a></li>
+              <li><a href="<?php echo base_url('Login/keluar') ?>">Keluar</a></li>
             </ul>
           </li>
       <?php } ?>

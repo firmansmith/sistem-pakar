@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2019 at 01:31 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.1.27
+-- Generation Time: Aug 22, 2019 at 11:20 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -53,36 +51,226 @@ INSERT INTO `admin` (`id`, `email`, `password`, `nama`, `status`, `gambar`, `the
 
 CREATE TABLE `hasil_user` (
   `id_hasil` int(3) NOT NULL,
-  `id_user` int(3) NOT NULL,
+  `id_riwayat` int(3) NOT NULL,
   `id_soal` int(3) NOT NULL,
-  `id_jawaban` int(3) NOT NULL
+  `id_jawaban` int(3) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `hasil_user`
 --
 
-INSERT INTO `hasil_user` (`id_hasil`, `id_user`, `id_soal`, `id_jawaban`) VALUES
-(11, 21, 1, 1),
-(12, 21, 2, 22),
-(13, 21, 3, 52),
-(14, 21, 4, 7),
-(15, 21, 5, 77),
-(16, 21, 1, 2),
-(17, 21, 2, 21),
-(18, 21, 3, 51),
-(19, 21, 4, 8),
-(20, 21, 5, 77),
-(21, 21, 1, 1),
-(22, 21, 2, 21),
-(23, 21, 3, 51),
-(24, 21, 4, 7),
-(25, 21, 5, 77),
-(26, 21, 1, 1),
-(27, 21, 2, 21),
-(28, 21, 3, 52),
-(29, 21, 4, 8),
-(30, 21, 5, 77);
+INSERT INTO `hasil_user` (`id_hasil`, `id_riwayat`, `id_soal`, `id_jawaban`) VALUES
+(100, 17, 11, 27),
+(101, 17, 21, 29),
+(102, 17, 31, 32),
+(103, 17, 41, 34),
+(104, 17, 51, 35),
+(105, 17, 61, 37),
+(106, 17, 2, 21),
+(107, 17, 22, 39),
+(108, 17, 12, 42),
+(109, 17, 32, 43),
+(110, 17, 42, 45),
+(111, 17, 52, 48),
+(112, 17, 62, 49),
+(113, 17, 3, 52),
+(114, 17, 13, 53),
+(115, 17, 23, 56),
+(116, 17, 33, 57),
+(117, 17, 43, 14),
+(118, 17, 53, 62),
+(119, 17, 63, 63),
+(120, 17, 4, 7),
+(121, 17, 14, 66),
+(122, 17, 24, 67),
+(123, 17, 34, 70),
+(124, 17, 44, 74),
+(125, 17, 54, 71),
+(126, 17, 64, 75),
+(127, 17, 5, 77),
+(128, 17, 15, 6),
+(129, 17, 25, 79),
+(130, 17, 35, 82),
+(131, 17, 45, 84),
+(132, 17, 55, 86),
+(133, 17, 65, 88),
+(134, 17, 6, 90),
+(135, 17, 16, 26),
+(136, 17, 26, 92),
+(137, 17, 36, 11),
+(138, 17, 46, 94),
+(139, 17, 56, 95),
+(140, 17, 66, 98),
+(141, 17, 7, 100),
+(142, 17, 17, 101),
+(143, 17, 27, 103),
+(144, 17, 37, 105),
+(145, 17, 47, 108),
+(146, 17, 57, 18),
+(147, 17, 67, 110),
+(148, 17, 8, 3),
+(149, 17, 18, 111),
+(150, 17, 28, 114),
+(151, 17, 38, 115),
+(152, 17, 48, 118),
+(153, 17, 58, 119),
+(154, 17, 68, 122),
+(155, 17, 9, 23),
+(156, 17, 19, 123),
+(157, 17, 29, 10),
+(158, 17, 39, 125),
+(159, 17, 49, 128),
+(160, 17, 59, 130),
+(161, 17, 69, 131),
+(162, 17, 10, 19),
+(163, 17, 20, 134),
+(164, 17, 30, 136),
+(165, 17, 40, 137),
+(166, 17, 50, 15),
+(167, 17, 60, 139),
+(168, 17, 70, 141),
+(169, 18, 11, 27),
+(170, 18, 21, 29),
+(171, 18, 31, 32),
+(172, 19, 11, 27),
+(173, 19, 21, 29),
+(174, 19, 31, 32),
+(175, 19, 41, NULL),
+(176, 19, 51, 35),
+(177, 19, 61, 38),
+(178, 19, 2, NULL),
+(179, 19, 22, 40),
+(180, 19, 12, NULL),
+(181, 19, 32, NULL),
+(182, 19, 42, NULL),
+(183, 19, 52, NULL),
+(184, 19, 62, NULL),
+(185, 19, 3, NULL),
+(186, 19, 13, NULL),
+(187, 19, 23, NULL),
+(188, 19, 33, NULL),
+(189, 19, 43, NULL),
+(190, 19, 53, NULL),
+(191, 19, 63, NULL),
+(192, 19, 4, NULL),
+(193, 19, 14, NULL),
+(194, 19, 24, NULL),
+(195, 19, 34, NULL),
+(196, 19, 44, NULL),
+(197, 19, 54, NULL),
+(198, 19, 64, NULL),
+(199, 19, 5, NULL),
+(200, 19, 15, NULL),
+(201, 19, 25, NULL),
+(202, 19, 35, NULL),
+(203, 19, 45, NULL),
+(204, 19, 55, NULL),
+(205, 19, 65, NULL),
+(206, 19, 6, NULL),
+(207, 19, 16, NULL),
+(208, 19, 26, NULL),
+(209, 19, 36, NULL),
+(210, 19, 46, NULL),
+(211, 19, 56, NULL),
+(212, 19, 66, NULL),
+(213, 19, 7, NULL),
+(214, 19, 17, NULL),
+(215, 19, 27, NULL),
+(216, 19, 37, NULL),
+(217, 19, 47, NULL),
+(218, 19, 57, NULL),
+(219, 19, 67, NULL),
+(220, 19, 8, NULL),
+(221, 19, 18, NULL),
+(222, 19, 28, NULL),
+(223, 19, 38, NULL),
+(224, 19, 48, NULL),
+(225, 19, 58, NULL),
+(226, 19, 68, NULL),
+(227, 19, 9, NULL),
+(228, 19, 19, NULL),
+(229, 19, 29, NULL),
+(230, 19, 39, NULL),
+(231, 19, 49, NULL),
+(232, 19, 59, NULL),
+(233, 19, 69, NULL),
+(234, 19, 10, NULL),
+(235, 19, 20, NULL),
+(236, 19, 30, NULL),
+(237, 19, 40, NULL),
+(238, 19, 50, NULL),
+(239, 19, 60, NULL),
+(240, 19, 70, NULL),
+(241, 20, 11, 27),
+(242, 20, 21, NULL),
+(243, 20, 31, NULL),
+(244, 20, 41, NULL),
+(245, 20, 51, NULL),
+(246, 20, 61, NULL),
+(247, 20, 2, NULL),
+(248, 20, 22, NULL),
+(249, 20, 12, NULL),
+(250, 20, 32, NULL),
+(251, 20, 42, 46),
+(252, 20, 52, 47),
+(253, 20, 62, NULL),
+(254, 20, 3, NULL),
+(255, 20, 13, NULL),
+(256, 20, 23, NULL),
+(257, 20, 33, NULL),
+(258, 20, 43, NULL),
+(259, 20, 53, NULL),
+(260, 20, 63, NULL),
+(261, 20, 4, 8),
+(262, 20, 14, NULL),
+(263, 20, 24, NULL),
+(264, 20, 34, NULL),
+(265, 20, 44, NULL),
+(266, 20, 54, NULL),
+(267, 20, 64, NULL),
+(268, 20, 5, NULL),
+(269, 20, 15, NULL),
+(270, 20, 25, NULL),
+(271, 20, 35, NULL),
+(272, 20, 45, NULL),
+(273, 20, 55, NULL),
+(274, 20, 65, NULL),
+(275, 20, 6, NULL),
+(276, 20, 16, NULL),
+(277, 20, 26, NULL),
+(278, 20, 36, NULL),
+(279, 20, 46, NULL),
+(280, 20, 56, NULL),
+(281, 20, 66, NULL),
+(282, 20, 7, NULL),
+(283, 20, 17, NULL),
+(284, 20, 27, NULL),
+(285, 20, 37, NULL),
+(286, 20, 47, NULL),
+(287, 20, 57, NULL),
+(288, 20, 67, NULL),
+(289, 20, 8, NULL),
+(290, 20, 18, NULL),
+(291, 20, 28, NULL),
+(292, 20, 38, NULL),
+(293, 20, 48, NULL),
+(294, 20, 58, NULL),
+(295, 20, 68, NULL),
+(296, 20, 9, NULL),
+(297, 20, 19, NULL),
+(298, 20, 29, NULL),
+(299, 20, 39, NULL),
+(300, 20, 49, NULL),
+(301, 20, 59, NULL),
+(302, 20, 69, NULL),
+(303, 20, 10, NULL),
+(304, 20, 20, NULL),
+(305, 20, 30, NULL),
+(306, 20, 40, NULL),
+(307, 20, 50, NULL),
+(308, 20, 60, NULL),
+(309, 20, 70, NULL);
 
 -- --------------------------------------------------------
 
@@ -93,154 +281,155 @@ INSERT INTO `hasil_user` (`id_hasil`, `id_user`, `id_soal`, `id_jawaban`) VALUES
 CREATE TABLE `jawaban` (
   `id_jawaban` int(3) NOT NULL,
   `id_soal` int(3) NOT NULL,
-  `jawaban` varchar(255) NOT NULL
+  `jawaban` varchar(255) NOT NULL,
+  `kode` char(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `jawaban`
 --
 
-INSERT INTO `jawaban` (`id_jawaban`, `id_soal`, `jawaban`) VALUES
-(1, 1, 'Berinteraksi dengan banyak orang, termasuk orang asing'),
-(2, 1, 'Berinteraksi dengan sedikit orang, yang dikenal'),
-(3, 8, 'Berbicara dengan mudah dan panjang pada orang asing'),
-(4, 8, 'Berbicara sedikit pada orang asing'),
-(5, 15, 'Jarang dipertanyakan'),
-(6, 15, 'Sering dipertanyakan'),
-(7, 4, 'Jarang bertanya-tanya apa yang akan dikatakan'),
-(8, 4, 'Melatih terlebih dahulu apa yang akan dikatakan'),
-(9, 29, 'Fundamental'),
-(10, 29, 'Tambahan'),
-(11, 36, 'Mendiskusikan sebuah isu'),
-(12, 36, 'Mencapai sebuah kesepakatan untuk sebuah isu'),
-(13, 43, 'Penghakiman berdasarkan logika'),
-(14, 43, 'penghakiman berdasarkan nilai-nilai/prinsip'),
-(15, 50, 'Menjadi tidak pandang bulu'),
-(16, 50, 'Menjadi kritis'),
-(17, 57, 'Pernyataan final dan tidak dapat berubah'),
-(18, 57, 'Pernyataan pendahuluan dan sementara'),
-(19, 10, 'Mudah didekati'),
-(20, 10, 'Sedikit pendiam'),
-(21, 2, 'Terlambat, dengan bertambah semangat'),
-(22, 2, 'Lebih awal, dengan energi yang terkuras'),
-(23, 9, 'Cepat mengangkatnya pertama kali'),
-(24, 9, 'Berharap orang lain akan menjawab'),
-(25, 16, 'Praktis'),
-(26, 16, 'Aneh'),
-(27, 11, 'Realistis daripada spekulatif'),
-(28, 11, 'Spekulatif daripada realistis'),
-(29, 21, 'Berkhayal dan tidak memperhatikan apa yang terjadi '),
-(30, 21, 'Melakukan sesuatu yang membosankan'),
-(31, 31, 'Prinsip'),
-(32, 31, 'Emosi'),
-(33, 41, 'Diyakinkan'),
-(34, 41, 'Disentuh'),
-(35, 51, 'Sesuai dengan deadlines'),
-(36, 51, 'Kapan saja'),
-(37, 61, 'Berhati-hati'),
-(38, 61, 'Menurut kata hati'),
-(39, 22, 'Orang yang bijaksana'),
-(40, 22, 'orang yang imajinatif'),
-(41, 12, 'Apa yang sesungguhnya'),
-(42, 12, 'Apa yang mungkin'),
-(43, 32, 'Hukum daripada keadaan'),
-(44, 32, 'Keadaan daripada hukum'),
-(45, 42, 'Obyektif'),
-(46, 42, 'Personal'),
-(47, 52, 'Tepat waktu'),
-(48, 52, 'tidak tergesa-gesa'),
-(49, 62, 'Tidak selesai'),
-(50, 62, 'selesai'),
-(51, 3, 'Terus mengikuti apa yang terjadi dengan anggota lain'),
-(52, 3, 'ketinggalan berita'),
-(53, 13, 'Melakukan dengan cara biasanya / umum'),
-(54, 13, 'melakukan dengan cara sendiri'),
-(55, 23, 'Mengatakan apa yang mereka maksud dan mengartikan apa yang mereka katakan '),
-(56, 23, 'Mengekspresikan sesuatu lebih menggunakan analogi'),
-(57, 33, 'Konsisten pikiran'),
-(58, 33, 'Hubungan manusia yang harmonis'),
-(61, 53, 'Tetap dan diputuskan'),
-(62, 53, 'Tidak tetap dan tidak diputuskan'),
-(63, 63, 'Serius dan meyakinkan'),
-(64, 63, 'Easy-going'),
-(65, 14, 'Berbicara untuk mereka sendiri'),
-(66, 14, 'mengilustrasikan prinsip'),
-(67, 24, 'Sesuatu yang mengganggu'),
-(68, 24, 'Cukup menarik'),
-(69, 34, 'Tenang '),
-(70, 34, 'Hangat'),
-(71, 54, 'Dengan Seleksi yang hati-hati'),
-(72, 54, 'Secara random '),
-(73, 44, 'Tidak adil'),
-(74, 44, 'Tidak kasihan'),
-(75, 64, 'Telah dibayar'),
-(76, 64, 'Mendapat pilihan untuk membeli'),
-(77, 5, 'Mengawali pembicaraan'),
-(78, 5, 'Menunggu untuk didekati'),
-(79, 25, 'Membuat diri mereka cukup berguna'),
-(80, 25, 'Cukup melatih fantasi mereka'),
-(81, 35, 'Standar yang telah ada'),
-(82, 35, 'Perasaan'),
-(83, 45, 'Tegas daripada lembut'),
-(84, 45, 'Lembut daripada tegas'),
-(85, 55, 'Kemampuan mengorganisasikan dan melakukan metode'),
-(86, 55, 'Kemampuan beradaptasi dan membuat sesuatu'),
-(87, 65, 'Tak terbatas'),
-(88, 65, 'Terbuka'),
-(89, 6, 'Membuat bersemangat'),
-(90, 6, 'Membebani diri'),
-(91, 26, 'Melihat bagaimana orang lain berguna'),
-(92, 26, 'Melihat bagaimana orang lain melihat'),
-(93, 46, 'Pikiran saya'),
-(94, 46, 'Hati saya'),
-(95, 56, 'Kontrak'),
-(96, 56, 'Tidak tetap'),
-(97, 66, 'Kerapihan'),
-(98, 66, 'Apa saja yang muncul'),
-(99, 7, 'Banyak teman dengan hubungan singkat'),
-(100, 7, 'Sedikit teman dengan hubungan panjang'),
-(101, 17, 'Fakta'),
-(102, 17, 'Prinsip'),
-(103, 27, 'Produksi dan distribusi'),
-(104, 27, 'Desain dan riset'),
-(105, 37, '\" Orang yang logis \"'),
-(106, 37, '\" Orang yang sangat sentimental \"'),
-(107, 47, 'Kokoh'),
-(108, 47, 'Mengabdi'),
-(109, 67, 'Setelah sebuah keputusan'),
-(110, 67, 'Sebelum sebuah keputusan'),
-(111, 18, 'Pengalaman'),
-(112, 18, 'Firasat'),
-(113, 28, 'Lebih mempraktekan daripada banyak akal'),
-(114, 28, 'Lebih banyak akal daripada mempraktekan '),
-(115, 38, 'Memiliki alasan jelas'),
-(116, 38, 'Memiliki perasaan kuat'),
-(117, 48, 'Berpikir adil'),
-(118, 48, 'Simpatik'),
-(119, 58, 'Meyakinkan bahwa semuanya telah teratur'),
-(120, 58, 'Membiarkan semuanya terjadi apa adanya'),
-(121, 68, 'Dinegosiasikan kembali'),
-(122, 68, 'Random dan sambil lalu'),
-(123, 19, 'Memiliki perasaan kuat terhadap kenyataan'),
-(124, 19, 'Memiliki imajinasi yang hidup'),
-(125, 39, 'Menjadi terlalu penuh gairah'),
-(126, 39, 'Menjadi terlalu obyektif'),
-(127, 49, 'Keras kepala'),
-(128, 49, 'Berhati lembut'),
-(129, 59, 'Terstruktur dan terjadwal'),
-(130, 59, 'Tidak terstruktur dan tidak terjadwal'),
-(131, 69, 'Rutin daripada tidak karuan'),
-(132, 69, 'Tidak karuan daripada rutin'),
-(133, 20, 'Lebih harfiah / sebenarnya'),
-(134, 20, 'Lebih bersifat kiasan / perlambangan'),
-(135, 30, 'Mengidentifikasi orang lain'),
-(136, 30, 'Menggunakan orang lain'),
-(137, 40, 'Jelas dalam beralasan'),
-(138, 40, 'kuat dalam berperasaan'),
-(139, 60, 'Acara yang direncanakan'),
-(140, 60, 'Acara yang tidak direncanakan'),
-(141, 70, 'Berhati-hati daripada spontan'),
-(142, 70, 'spontan daripada berhati-hati');
+INSERT INTO `jawaban` (`id_jawaban`, `id_soal`, `jawaban`, `kode`) VALUES
+(1, 1, 'Berinteraksi dengan banyak orang, termasuk orang asing', 'A'),
+(2, 1, 'Berinteraksi dengan sedikit orang, yang dikenal', 'B'),
+(3, 8, 'Berbicara dengan mudah dan panjang pada orang asing', 'A'),
+(4, 8, 'Berbicara sedikit pada orang asing', 'B'),
+(5, 15, 'Jarang dipertanyakan', 'A'),
+(6, 15, 'Sering dipertanyakan', 'B'),
+(7, 4, 'Jarang bertanya-tanya apa yang akan dikatakan', 'A'),
+(8, 4, 'Melatih terlebih dahulu apa yang akan dikatakan', 'B'),
+(9, 29, 'Fundamental', 'A'),
+(10, 29, 'Tambahan', 'B'),
+(11, 36, 'Mendiskusikan sebuah isu', 'A'),
+(12, 36, 'Mencapai sebuah kesepakatan untuk sebuah isu', 'B'),
+(13, 43, 'Penghakiman berdasarkan logika', 'A'),
+(14, 43, 'penghakiman berdasarkan nilai-nilai/prinsip', 'B'),
+(15, 50, 'Menjadi tidak pandang bulu', 'A'),
+(16, 50, 'Menjadi kritis', 'B'),
+(17, 57, 'Pernyataan final dan tidak dapat berubah', 'A'),
+(18, 57, 'Pernyataan pendahuluan dan sementara', 'B'),
+(19, 10, 'Mudah didekati', 'A'),
+(20, 10, 'Sedikit pendiam', 'B'),
+(21, 2, 'Terlambat, dengan bertambah semangat', 'A'),
+(22, 2, 'Lebih awal, dengan energi yang terkuras', 'B'),
+(23, 9, 'Cepat mengangkatnya pertama kali', 'A'),
+(24, 9, 'Berharap orang lain akan menjawab', 'B'),
+(25, 16, 'Praktis', 'A'),
+(26, 16, 'Aneh', 'B'),
+(27, 11, 'Realistis daripada spekulatif', 'A'),
+(28, 11, 'Spekulatif daripada realistis', 'B'),
+(29, 21, 'Berkhayal dan tidak memperhatikan apa yang terjadi ', 'A'),
+(30, 21, 'Melakukan sesuatu yang membosankan', 'B'),
+(31, 31, 'Prinsip', 'A'),
+(32, 31, 'Emosi', 'B'),
+(33, 41, 'Diyakinkan', 'A'),
+(34, 41, 'Disentuh', 'B'),
+(35, 51, 'Sesuai dengan deadlines', 'A'),
+(36, 51, 'Kapan saja', 'B'),
+(37, 61, 'Berhati-hati', 'A'),
+(38, 61, 'Menurut kata hati', 'B'),
+(39, 22, 'Orang yang bijaksana', 'A'),
+(40, 22, 'orang yang imajinatif', 'B'),
+(41, 12, 'Apa yang sesungguhnya', 'A'),
+(42, 12, 'Apa yang mungkin', 'B'),
+(43, 32, 'Hukum daripada keadaan', 'A'),
+(44, 32, 'Keadaan daripada hukum', 'B'),
+(45, 42, 'Obyektif', 'A'),
+(46, 42, 'Personal', 'B'),
+(47, 52, 'Tepat waktu', 'A'),
+(48, 52, 'tidak tergesa-gesa', 'B'),
+(49, 62, 'Tidak selesai', 'A'),
+(50, 62, 'selesai', 'B'),
+(51, 3, 'Terus mengikuti apa yang terjadi dengan anggota lain', 'A'),
+(52, 3, 'ketinggalan berita', 'B'),
+(53, 13, 'Melakukan dengan cara biasanya / umum', 'A'),
+(54, 13, 'melakukan dengan cara sendiri', 'B'),
+(55, 23, 'Mengatakan apa yang mereka maksud dan mengartikan apa yang mereka katakan ', 'A'),
+(56, 23, 'Mengekspresikan sesuatu lebih menggunakan analogi', 'B'),
+(57, 33, 'Konsisten pikiran', 'A'),
+(58, 33, 'Hubungan manusia yang harmonis', 'B'),
+(61, 53, 'Tetap dan diputuskan', 'A'),
+(62, 53, 'Tidak tetap dan tidak diputuskan', 'B'),
+(63, 63, 'Serius dan meyakinkan', 'A'),
+(64, 63, 'Easy-going', 'B'),
+(65, 14, 'Berbicara untuk mereka sendiri', 'A'),
+(66, 14, 'mengilustrasikan prinsip', 'B'),
+(67, 24, 'Sesuatu yang mengganggu', 'A'),
+(68, 24, 'Cukup menarik', 'B'),
+(69, 34, 'Tenang ', 'A'),
+(70, 34, 'Hangat', 'B'),
+(71, 54, 'Dengan Seleksi yang hati-hati', 'A'),
+(72, 54, 'Secara random ', 'B'),
+(73, 44, 'Tidak adil', 'A'),
+(74, 44, 'Tidak kasihan', 'B'),
+(75, 64, 'Telah dibayar', 'A'),
+(76, 64, 'Mendapat pilihan untuk membeli', 'B'),
+(77, 5, 'Mengawali pembicaraan', 'A'),
+(78, 5, 'Menunggu untuk didekati', 'B'),
+(79, 25, 'Membuat diri mereka cukup berguna', 'A'),
+(80, 25, 'Cukup melatih fantasi mereka', 'B'),
+(81, 35, 'Standar yang telah ada', 'A'),
+(82, 35, 'Perasaan', 'B'),
+(83, 45, 'Tegas daripada lembut', 'A'),
+(84, 45, 'Lembut daripada tegas', 'B'),
+(85, 55, 'Kemampuan mengorganisasikan dan melakukan metode', 'A'),
+(86, 55, 'Kemampuan beradaptasi dan membuat sesuatu', 'B'),
+(87, 65, 'Tak terbatas', 'A'),
+(88, 65, 'Terbuka', 'B'),
+(89, 6, 'Membuat bersemangat', 'A'),
+(90, 6, 'Membebani diri', 'B'),
+(91, 26, 'Melihat bagaimana orang lain berguna', 'A'),
+(92, 26, 'Melihat bagaimana orang lain melihat', 'B'),
+(93, 46, 'Pikiran saya', 'A'),
+(94, 46, 'Hati saya', 'B'),
+(95, 56, 'Kontrak', 'A'),
+(96, 56, 'Tidak tetap', 'B'),
+(97, 66, 'Kerapihan', 'A'),
+(98, 66, 'Apa saja yang muncul', 'B'),
+(99, 7, 'Banyak teman dengan hubungan singkat', 'A'),
+(100, 7, 'Sedikit teman dengan hubungan panjang', 'B'),
+(101, 17, 'Fakta', 'A'),
+(102, 17, 'Prinsip', 'B'),
+(103, 27, 'Produksi dan distribusi', 'A'),
+(104, 27, 'Desain dan riset', 'B'),
+(105, 37, '\" Orang yang logis \"', 'A'),
+(106, 37, '\" Orang yang sangat sentimental \"', 'B'),
+(107, 47, 'Kokoh', 'A'),
+(108, 47, 'Mengabdi', 'B'),
+(109, 67, 'Setelah sebuah keputusan', 'A'),
+(110, 67, 'Sebelum sebuah keputusan', 'B'),
+(111, 18, 'Pengalaman', 'A'),
+(112, 18, 'Firasat', 'B'),
+(113, 28, 'Lebih mempraktekan daripada banyak akal', 'A'),
+(114, 28, 'Lebih banyak akal daripada mempraktekan ', 'B'),
+(115, 38, 'Memiliki alasan jelas', 'A'),
+(116, 38, 'Memiliki perasaan kuat', 'B'),
+(117, 48, 'Berpikir adil', 'A'),
+(118, 48, 'Simpatik', 'B'),
+(119, 58, 'Meyakinkan bahwa semuanya telah teratur', 'A'),
+(120, 58, 'Membiarkan semuanya terjadi apa adanya', 'B'),
+(121, 68, 'Dinegosiasikan kembali', 'A'),
+(122, 68, 'Random dan sambil lalu', 'B'),
+(123, 19, 'Memiliki perasaan kuat terhadap kenyataan', 'A'),
+(124, 19, 'Memiliki imajinasi yang hidup', 'B'),
+(125, 39, 'Menjadi terlalu penuh gairah', 'A'),
+(126, 39, 'Menjadi terlalu obyektif', 'B'),
+(127, 49, 'Keras kepala', 'A'),
+(128, 49, 'Berhati lembut', 'B'),
+(129, 59, 'Terstruktur dan terjadwal', 'A'),
+(130, 59, 'Tidak terstruktur dan tidak terjadwal', 'B'),
+(131, 69, 'Rutin daripada tidak karuan', 'A'),
+(132, 69, 'Tidak karuan daripada rutin', 'B'),
+(133, 20, 'Lebih harfiah / sebenarnya', 'A'),
+(134, 20, 'Lebih bersifat kiasan / perlambangan', 'B'),
+(135, 30, 'Mengidentifikasi orang lain', 'A'),
+(136, 30, 'Menggunakan orang lain', 'B'),
+(137, 40, 'Jelas dalam beralasan', 'A'),
+(138, 40, 'kuat dalam berperasaan', 'B'),
+(139, 60, 'Acara yang direncanakan', 'A'),
+(140, 60, 'Acara yang tidak direncanakan', 'B'),
+(141, 70, 'Berhati-hati daripada spontan', 'A'),
+(142, 70, 'spontan daripada berhati-hati', 'B');
 
 -- --------------------------------------------------------
 
@@ -427,6 +616,28 @@ INSERT INTO `relasi_kategori` (`id_relasi_kategori`, `id_kategori`, `id_soal`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `riwayat`
+--
+
+CREATE TABLE `riwayat` (
+  `id_riwayat` int(3) NOT NULL,
+  `id_user` int(3) NOT NULL,
+  `tanggal` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `riwayat`
+--
+
+INSERT INTO `riwayat` (`id_riwayat`, `id_user`, `tanggal`) VALUES
+(17, 22, '2019-08-22 08:39:21'),
+(18, 22, '2019-08-22 08:48:29'),
+(19, 22, '2019-08-22 08:48:59'),
+(20, 22, '2019-08-22 08:50:02');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `soal`
 --
 
@@ -566,7 +777,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `nama_lengkap`, `email`, `password`, `status`, `kelamin`) VALUES
-(21, 'user1', 'firman', 'muhamad.firman34@gmail.com', 'f52a49684359196a05a0c1d0bd266130', 'pelajar', NULL);
+(21, 'user1', 'firman', 'muhamad.firman34@gmail.com', 'f52a49684359196a05a0c1d0bd266130', 'pelajar', NULL),
+(22, 'bambang', 'bambang', 'admin@admin.com', '202cb962ac59075b964b07152d234b70', 'Pelajar', 'Laki-laki');
 
 --
 -- Indexes for dumped tables
@@ -603,6 +815,12 @@ ALTER TABLE `relasi_kategori`
   ADD PRIMARY KEY (`id_relasi_kategori`);
 
 --
+-- Indexes for table `riwayat`
+--
+ALTER TABLE `riwayat`
+  ADD PRIMARY KEY (`id_riwayat`);
+
+--
 -- Indexes for table `soal`
 --
 ALTER TABLE `soal`
@@ -629,50 +847,46 @@ ALTER TABLE `user`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `hasil_user`
 --
 ALTER TABLE `hasil_user`
-  MODIFY `id_hasil` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
-
+  MODIFY `id_hasil` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
 --
 -- AUTO_INCREMENT for table `jawaban`
 --
 ALTER TABLE `jawaban`
   MODIFY `id_jawaban` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
-
 --
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
   MODIFY `id_kategori` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT for table `relasi_kategori`
 --
 ALTER TABLE `relasi_kategori`
   MODIFY `id_relasi_kategori` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
-
+--
+-- AUTO_INCREMENT for table `riwayat`
+--
+ALTER TABLE `riwayat`
+  MODIFY `id_riwayat` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `soal`
 --
 ALTER TABLE `soal`
   MODIFY `id_soal` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
-
 --
 -- AUTO_INCREMENT for table `tjm_menu`
 --
 ALTER TABLE `tjm_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-COMMIT;
-
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
