@@ -46,21 +46,21 @@
   <!--==========================
     Top Bar
   ============================-->
-  <!-- <section id="topbar" class="d-none d-lg-block">
+    <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="fa fa-phone"></i> +1 5589 55488 55
+        <i class="fa fa-envelope-o">muhamad.firman34@gmail.com</i>
+        <i class="fa fa-phone">+6285921665947</i> 
+        <i class="fa fa-line">1316603</i>
       </div>
       <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/muhamad.firman.9404" class="facebook"><i class="fa fa-facebook"></i></a>
       </div>
     </div>
-  </section> -->
+  </section> 
 
   <!--==========================
     Header
@@ -69,7 +69,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Bamba<span>ng</span></a></h1>
+        <h1><a href="#body" class="scrollto">SMI<span>TH</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
