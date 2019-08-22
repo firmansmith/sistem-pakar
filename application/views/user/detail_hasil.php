@@ -9,6 +9,7 @@
 </style>
 
 <center>
+<?php if($detail_hasil) {?>
 <div class="col-md-10 text-justify costume">
 	<div class="row">
 		<div class="col-md-2"><label>Hasil Diagnosa</label></div>
@@ -53,6 +54,11 @@
 		</div>
 	</div>
 </div>
+<?php }else{?>
+<div class="col-md-10 text-justify costume">
+	<h1><i>Hasil diagnosa tidak ditemukan</i></h1>
+</div>
+<?php } ?>
 </center>
 
 <?php $this->load->view('user/footer'); ?>
