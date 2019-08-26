@@ -59,7 +59,7 @@ class Login extends CI_Controller {
 	}
 
 	public function proses_register(){
-		var_dump($_POST);
+		// var_dump($_POST);
 		$nama_lengkap = $this->input->post('nama_lengkap');
 		$email = $this->input->post('email');
 		$status = $this->input->post('status');
@@ -93,5 +93,29 @@ class Login extends CI_Controller {
 
 			redirect(base_url('Index/register'));
 		}
+	}
+
+	public function updateUser(){
+		// var_dump($_POST);
+		$nama_lengkap = $this->input->post('nama_lengkap');
+		$email = $this->input->post('email');
+		$status = $this->input->post('status');
+		$kelamin = $this->input->post('kelamin');
+		$username = $this->input->post('username');
+
+		$this->db->where('id_user',$this->session->userdata('id_user'));
+		$this->db->set('nama_lengkap',$nama_lengkap);
+		$this->db->set('email',$email);
+		$this->db->set('status',$status);
+		$this->db->set('kelamin',$kelamin);
+		$this->db->set('username',$username);
+		if(!empty($this->input->post('password'))){
+			$password = md5($this->input->post('password'));
+
+			$this->db->set('password',$password);
+		}
+		$this->db->update('user');
+
+		redirect(base_url('Index/profil'));
 	}
 }
