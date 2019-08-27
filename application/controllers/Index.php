@@ -69,7 +69,10 @@ class Index extends CI_Controller {
 	
 	public function profil(){
 		$this->hapus();
-		$this->load->view('user/profil');
+		$id_user = $this->session->userdata('id_user');
+		$this->db->where('id_user',$id_user);
+		$data['user'] = $this->db->get('user')->row();
+		$this->load->view('user/profil', $data);
 	}
 
 	public function login(){

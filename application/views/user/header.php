@@ -54,7 +54,6 @@
       <div class="contact-info float-left">
         <i class="fa fa-envelope-o">muhamad.firman34@gmail.com</i>
         <i class="fa fa-phone">+6285921665947</i> 
-        <i class="fa fa-line">1316603</i>
       </div>
       <div class="social-links float-right">
         <a href="https://www.facebook.com/muhamad.firman.9404" class="facebook"><i class="fa fa-facebook"></i></a>
