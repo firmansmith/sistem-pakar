@@ -72,7 +72,11 @@ class Index extends CI_Controller {
 		$id_user = $this->session->userdata('id_user');
 		$this->db->where('id_user',$id_user);
 		$data['user'] = $this->db->get('user')->row();
+<<<<<<< HEAD
 		$this->load->view('user/profil', $data);
+=======
+		$this->load->view('user/profil',$data);
+>>>>>>> 52f0bdda840fc06f8da5d0ae616463d06201aae6
 	}
 
 	public function login(){

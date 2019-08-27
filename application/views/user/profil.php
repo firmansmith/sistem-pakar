@@ -1,5 +1,8 @@
 <?php $this->load->view('user/header'); ?>
+<<<<<<< HEAD
 profil
+=======
+>>>>>>> 52f0bdda840fc06f8da5d0ae616463d06201aae6
 <style type="text/css">
 	.costume{
 		border: thin solid #50d8af;
@@ -72,9 +75,18 @@ profil
 			<div class="row">
 				<div class="col-md-8 text-right">
 				<input type="submit" name="" value="Simpan" class="btn btn-success">
+<<<<<<< HEAD
 
+=======
+					
+>>>>>>> 52f0bdda840fc06f8da5d0ae616463d06201aae6
 				</div>
 			</div>
 			</form>
 		</div>
+<<<<<<< HEAD
 	</center>
+=======
+	</center>
+<?php $this->load->view('user/footer'); ?>
+>>>>>>> 52f0bdda840fc06f8da5d0ae616463d06201aae6
